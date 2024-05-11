@@ -4,7 +4,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configure o Google Gemini (substitua pela sua chave real)
-google_api_key = "AIzaSyD4C3ygccT8UUFa6nowbbeFBdYa-7jzguU" 
+google_api_key = "Digite Sua api aqui" 
 genai.configure(api_key=google_api_key)
 generation_config = { "candidate_count": 1, "temperature": 0.5 }
 safety_settings = { 'HATE': 'BLOCK_NONE', 'HARASSMENT': 'BLOCK_NONE', 'SEXUAL': 'BLOCK_NONE', 'DANGEROUS': 'BLOCK_NONE'}
